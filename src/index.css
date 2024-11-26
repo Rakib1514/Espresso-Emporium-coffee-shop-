@@ -3,3 +3,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.cstm_text_shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero_btn{
+  @apply rounded-none border-secondary hover:border-white text-neutral-content hover:text-white btn btn-secondary font-rancho tracking-wider border-2 hover:bg-transparent mb-12
+}
+
+.add_coffee_btn{
+  @apply  border-primary hover:border-primary text-white cstm_text_shadow hover:text-white btn btn-secondary font-rancho tracking-wider border-2 hover:bg-transparent rounded-sm;
+}

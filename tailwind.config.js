@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'top-bar' : "url('https://i.ibb.co.com/0KhcCWz/topbar-bg.jpg')"
+        'top-bar' : "url('https://i.ibb.co.com/0KhcCWz/topbar-bg.jpg')",
+        'hero-bg' : "url('https://i.ibb.co.com/vqgMtKZ/hero-bg.jpg')"
       },
       fontFamily: {
         railway: ["Raleway", "sans-serif"],
