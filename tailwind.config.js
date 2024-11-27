@@ -5,7 +5,9 @@ export default {
     extend: {
       backgroundImage:{
         'top-bar' : "url('https://i.ibb.co.com/0KhcCWz/topbar-bg.jpg')",
-        'hero-bg' : "url('https://i.ibb.co.com/vqgMtKZ/hero-bg.jpg')"
+        'hero-bg' : "url('https://i.ibb.co.com/vqgMtKZ/hero-bg.jpg')",
+        'form-bg' : "url('https://i.ibb.co.com/pWKTCW8/form-bg.png')",
+        'card-container-l': "url()"
       },
       fontFamily: {
         railway: ["Raleway", "sans-serif"],
@@ -65,3 +67,5 @@ export default {
     require("daisyui"),
   ],
 };
+
+

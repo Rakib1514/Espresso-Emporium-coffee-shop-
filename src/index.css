@@ -16,3 +16,31 @@
 .add_coffee_btn{
   @apply  border-primary hover:border-primary text-white cstm_text_shadow hover:text-white btn btn-secondary font-rancho tracking-wider border-2 hover:bg-transparent rounded-sm;
 }
+
+.form_input_style{
+  @apply input input-bordered rounded-none focus:outline-offset-0 focus:outline-secondary focus:shadow-xl
+}
+
+.btn_details{
+  @apply btn btn-square bg-[#D2B48C] hover:bg-transparent hover:border-2 hover:border-[#D2B48C] text-white hover:-translate-y-1 hover:text-black
+}
+
+.btn_edit{
+  @apply btn btn-square btn-info hover:-translate-y-1 hover:text-info hover:bg-transparent hover:border-2
+}
+
+.btn_delete{
+  @apply btn btn-square btn-warning hover:-translate-y-1 hover:text-warning hover:bg-transparent hover:border-2
+}
+
+.card_info_style{
+  @apply font-semibold text-neutral-content
+}
+
+.coffee_card_base{
+  @apply p-7 grid grid-cols-12 gap-4 bg-base-200
+}
+
+.coffee_card_container{
+  @apply w-10/12 mx-auto grid grid-cols-2 gap-5 pt-8
+}

@@ -3,8 +3,12 @@ import BrandState from "../components/BrandState";
 import Hero from "../components/Hero";
 import SectionHeader from "../components/SectionHeader";
 import TopBar from "../components/TopBar";
+import { Link, useLoaderData } from "react-router-dom";
+import CoffeeCard from "../components/CoffeeCard";
 
 const HomeLayout = () => {
+  const coffees = useLoaderData();
+
   return (
     <div className="font-railway">
       <header>
@@ -22,8 +26,15 @@ const HomeLayout = () => {
           <SectionHeader
             title={"Our Popular Products"}
             subTitle={"--- Sip & Savor ---"}
-            button={<button className="add_coffee_btn">Add Coffee <FaMugHot className="text-xl text-primary"/></button>}
-          />
+            button={
+              <Link to={"/add-new-coffee"} className="add_coffee_btn">
+                Add Coffee <FaMugHot className="text-xl text-primary" />
+              </Link>}/>
+          <div className="coffee_card_container">
+            {
+              coffees.map((coffee) => (<CoffeeCard key={coffee._id} coffee={coffee} />))
+            }
+          </div>
         </section>
       </main>
 
