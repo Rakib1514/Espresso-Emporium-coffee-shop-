@@ -22,18 +22,20 @@ const HomeLayout = () => {
         <section>
           <BrandState />
         </section>
-        <section className="pt-24 ">
-          <SectionHeader
-            title={"Our Popular Products"}
-            subTitle={"--- Sip & Savor ---"}
-            button={
-              <Link to={"/add-new-coffee"} className="add_coffee_btn">
-                Add Coffee <FaMugHot className="text-xl text-primary" />
-              </Link>}/>
-          <div className="coffee_card_container">
-            {
-              coffees.map((coffee) => (<CoffeeCard key={coffee._id} coffee={coffee} />))
-            }
+        <section className="mt-24 bg-card-container-l bg-no-repeat bg-left-top">
+          <div className="bg-card-container-r bg-no-repeat bg-right-bottom">
+            <SectionHeader
+              title={"Our Popular Products"}
+              subTitle={"--- Sip & Savor ---"}
+              button={
+                <Link to={"/add-new-coffee"} className="add_coffee_btn">
+                  Add Coffee <FaMugHot className="text-xl text-primary" />
+                </Link>}/>
+            <div className="coffee_card_container">
+              {
+                coffees.map((coffee) => (<CoffeeCard key={coffee._id} coffee={coffee} />))
+              }
+            </div>
           </div>
         </section>
       </main>
