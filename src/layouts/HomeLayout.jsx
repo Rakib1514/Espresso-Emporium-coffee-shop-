@@ -5,9 +5,11 @@ import SectionHeader from "../components/SectionHeader";
 import TopBar from "../components/TopBar";
 import { Link, useLoaderData } from "react-router-dom";
 import CoffeeCard from "../components/CoffeeCard";
+import { useState } from "react";
 
 const HomeLayout = () => {
-  const coffees = useLoaderData();
+  const data = useLoaderData();
+  const [coffees, setCoffees] = useState(data);
 
   return (
     <div className="font-railway">
@@ -33,7 +35,7 @@ const HomeLayout = () => {
                 </Link>}/>
             <div className="coffee_card_container">
               {
-                coffees.map((coffee) => (<CoffeeCard key={coffee._id} coffee={coffee} />))
+                coffees.map((coffee) => (<CoffeeCard key={coffee._id} coffee={coffee} coffees={coffees} setCoffees={setCoffees}/>))
               }
             </div>
           </div>
