@@ -6,6 +6,7 @@ import TopBar from "../components/TopBar";
 import { Link, useLoaderData } from "react-router-dom";
 import CoffeeCard from "../components/CoffeeCard";
 import { useState } from "react";
+import Footer from "../components/Footer";
 
 const HomeLayout = () => {
   const data = useLoaderData();
@@ -42,7 +43,9 @@ const HomeLayout = () => {
         </section>
       </main>
 
-      <footer></footer>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 };
